@@ -85,6 +85,7 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="Content\img\header_google.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\animate.css" />
