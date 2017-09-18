@@ -211,6 +211,10 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 .btn.btn-blue-rounded {
     background: #00a8ff;
     padding: 19px 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 0px;
 }
 
 .btn.btn-blue-rounded:hover {

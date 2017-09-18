@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using Google.Apis.Customsearch.v1;
+using Google.Apis.SearchConsole.v1;
+using Google.Apis.SearchConsole.v1.Data;
 
 namespace website.Controllers
 {
@@ -19,5 +22,6 @@ namespace website.Controllers
 
             return View();
         }
+
     }
 }
