@@ -1,13 +1,32 @@
-﻿<header id="intro">
+﻿@model website.Models.Test
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header id="intro">
     <div class="container">
         <div class="table">
             <div class="header-text">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3 class="light white">Le référencement naturel garanti</h3>
-                        <h1 class="white typed">Resultat?</h1>
+                        <h3 class="light white">Le premier site est : <br/>
+						<a href="http://@Model.FirstSite" target="_blank">@Model.FirstSite</a></h3>
+                        @if(Model.Position == -1) {
+						    <h1 class="white typed">Vous n'êtes pas présent.</h1>
+						}
+						else
+						{
+						    <h1 class="white typed">Votre êtes en position @Model.Position.</h1>
+						}
                         <span class="typed-cursor">|</span>
-						<p class="light white">Tester votre position maintenant</p>
+						<br/>
+						<br/>
+                        @if(Model.Position == -1 || Model.Position > 1) {
+						    <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Améliorer votre position</a>
+						}
+						else{
+                            <p>Bravo vous êtes premier!</p>
+						}
                     </div>
 			    </div>
 				<div class="row">

@@ -87,7 +87,7 @@
     <Folder Include="Content\fonts\" />
     <Folder Include="Content\img\" />
     <Folder Include="Content\js\" />
-    <Folder Include="Views\SearchTester\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -95,8 +95,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\SearchTesterController.cs" />
-    <Compile Include="Models\ResultModel.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Models\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -108,7 +108,7 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Content\img\header_google.jpg" />
-    <Content Include="Views\SearchTester\Results.cshtml" />
+    <Content Include="Views\Test\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\animate.css" />
