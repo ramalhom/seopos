@@ -15,15 +15,37 @@
             set;
         }
 
-        public string WebSite {
+        public string WebSite
+        {
             get;
             set;
         }
 
-        public string Keywords {
+        public string Keywords
+        {
             get;
             set;
         }
 
+        public string[] Sites
+        {
+            get;
+            set;
+        }
+        public string[] Urls
+        {
+            get;
+            set;
+        }
+		public string[] Titles
+		{
+			get;
+			set;
+		}
+        public string TotalResults
+        {
+            get;
+            set;
+        }
     }
 }

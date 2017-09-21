@@ -37,23 +37,31 @@ namespace website.Controllers
 			var search = listRequest.Execute();
 			
             test.FirstSite = search.Items[0].DisplayLink;
+            test.TotalResults = search.SearchInformation.FormattedTotalResults;
             bool isFound = false;
-            int paging = 1;
+            //int paging = 1;
+            test.Sites = new string[10];
+            test.Urls = new string[10];
+            test.Titles = new string[10];
             while (!isFound)
             {
                 for (int i = 0; i < 10; i++)
                 {
+                    test.Sites[i] = search.Items[i].DisplayLink;
+                    test.Urls[i] = "http://" + search.Items[i].FormattedUrl;
+                    test.Titles[i] = search.Items[i].Title;
                     if (search.Items[i].FormattedUrl.Contains(test.WebSite))
                     {
+
                         test.Position = i + 1;
                         isFound = true;
                     }
                 }
-                if (paging == 10)
+                //if (paging == 10)
                     break;
-                paging++;
-                listRequest.Start = (paging-1) * 10;
-                search = listRequest.Execute();
+                //paging++;
+                //listRequest.Start = (paging-1) * 10;
+                //search = listRequest.Execute();
             }
 
             return View("Search",test);
