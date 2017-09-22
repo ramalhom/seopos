@@ -20,11 +20,7 @@
 						}
                         <span class="typed-cursor">|</span>
 						<br/>
-						<br/>
-                        @if(Model.Position == -1 || Model.Position > 1) {
-						    <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Améliorer votre position</a>
-						}
-						else{
+                        @if(Model.Position == 1) {
                             <p>Bravo vous êtes premier!</p>
 						}
                     </div>
@@ -39,7 +35,7 @@
             <div class="row intro-tables">
                 <div class="col-md-8">
                     <div class="intro-table intro-table-first">
-                        <h5 class="white heading">Comparez-vous</h5>
+                        <h5 class="white heading">Vérifiez les résultats (@Model.TotalResults pages)</h5>
                         <div class="owl-carousel owl-schedule bottom">
 						    <div class="item">
 							    @for(var i = 1; i < 4; i++) {
@@ -82,11 +78,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="intro-table intro-table-hover">
-                        <h5 class="white heading hide-hover">Premium Membership</h5>
+                        <h5 class="white heading hide-hover">Améliorez votre position</h5>
                         <div class="bottom">
-                            <h4 class="white heading small-heading no-margin regular">Register Today</h4>
-                            <h4 class="white heading small-pt">20% Discount</h4>
-                            <a href="#" class="btn btn-white-fill expand">Register</a>
+                            <h4 class="white heading small-heading no-margin regular">Paiement uniquement</h4>
+                            <h4 class="white heading small-pt">au résultat</h4>
+                            <a href="#" class="btn btn-white-fill expand">S'inscrire</a>
                         </div>
                     </div>
                 </div>

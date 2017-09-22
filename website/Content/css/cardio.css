@@ -325,10 +325,13 @@ section {
 	border-left: 30px solid white;
 }
 
+
 .intro-tables {
-	top: -130px;
+	top: -240px;
 	position: relative;
 }
+
+
 
 .intro-table {
 	-webkit-background-size: cover;
@@ -338,13 +341,13 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.jpg');
+	background-image: url('../img/table-1-frog.jpg');
 }
 
 .intro-table-hover {
 	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
 	transition: background-image 0.3s ease, background-position 0.3s;
-	background-image: url('../img/table-2.jpg');
+	background-image: url('../img/table-2-thumbup.jpg');
 }
 
 .intro-table-hover h4 {
@@ -355,7 +358,7 @@ section {
 }
 
 .intro-table-hover:hover {
-	background-image: url('../img/table-2-hover.jpg');
+	background-image: url('../img/table-2-hover-thumbup.jpg');
 	background-position: 50% 50%;
 }
 

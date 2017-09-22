@@ -109,6 +109,9 @@
     <Content Include="packages.config" />
     <Content Include="Content\img\header_google.jpg" />
     <Content Include="Views\Test\Search.cshtml" />
+    <Content Include="Content\img\table-1-frog.jpg" />
+    <Content Include="Content\img\table-2-thumbup.jpg" />
+    <Content Include="Content\img\table-2-hover-thumbup.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\animate.css" />
