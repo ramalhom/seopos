@@ -34,12 +34,12 @@ namespace website.Controllers
             listRequest.Googlehost = "google.ch";
             listRequest.Hl = "fr";
 			listRequest.Num = 10;
-			var search = listRequest.Execute();
+			//var search = listRequest.Execute();
 			
-            test.FirstSite = search.Items[0].DisplayLink;
+            //test.FirstSite = search.Items[0].DisplayLink;
             //test.FirstSite = "infoteam.ch";
-            test.TotalResults = search.SearchInformation.FormattedTotalResults;
-            //test.TotalResults = "850000";
+            //test.TotalResults = search.SearchInformation.FormattedTotalResults;
+            test.TotalResults = "850000";
             bool isFound = false;
             //int paging = 1;
             test.Sites = new string[10];
@@ -49,18 +49,20 @@ namespace website.Controllers
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    test.Sites[i] = search.Items[i].DisplayLink;
-                    //test.Sites[i] = "Site numero " + i;
-                    test.Urls[i] = "http://" + search.Items[i].FormattedUrl;
-                    //test.Urls[i] = "http://www.google.com";
-                    test.Titles[i] = search.Items[i].Title;
-                    //test.Titles[i] = "Titre du site " + i;
-                    if (!isFound && search.Items[i].FormattedUrl.Contains(test.WebSite))
+                    //test.Sites[i] = search.Items[i].DisplayLink;
+                    test.Sites[i] = "Site numero " + i;
+                    //test.Urls[i] = "http://" + search.Items[i].FormattedUrl;
+                    test.Urls[i] = "http://www.google.com";
+                    //test.Titles[i] = search.Items[i].Title;
+                    test.Titles[i] = "Titre du site " + i;
+                    /*if (!isFound && search.Items[i].FormattedUrl.Contains(test.WebSite))
                     {
 
                         test.Position = i + 1;
                         isFound = true;
-                    }
+                    }*/
+                    test.Position = 5;
+                    isFound = true;
                 }
                 //if (paging == 10)
                     break;

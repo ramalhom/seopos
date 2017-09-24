@@ -9,12 +9,6 @@
             set;
         }
 
-        public string FirstSite
-        {
-            get;
-            set;
-        }
-
         public string WebSite
         {
             get;
