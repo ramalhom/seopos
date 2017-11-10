@@ -9,16 +9,14 @@
             <div class="header-text">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3 class="light white">Le premier site est : <br/>
-						<a href="@Model.Urls[0]" target="_blank">@Model.Sites[0]</a></h3>
                         @if(Model.Position == -1) {
 						    <h1 class="white typed">Vous n'êtes pas présent.</h1>
 						}
 						else
 						{
-						    <h1 class="white typed">Vous êtes en position @Model.Position.</h1>
+						    <h1 class="white typed">Vous êtes en position</h1>
+						    <span class="circle">@Model.Position</span>
 						}
-                        <span class="typed-cursor">|</span>
                     </div>
 			    </div>
             </div>

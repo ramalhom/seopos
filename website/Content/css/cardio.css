@@ -152,6 +152,15 @@ header .typed-cursor {
 	animation-iteration-count: infinite;
 }
 
+header .circle {
+    width: 100px;
+    height: 100px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
 a {
 	text-decoration: none;
 	color: #00a8ff;
