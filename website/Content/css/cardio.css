@@ -159,6 +159,8 @@ header .circle {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    position: absolute;
+    color: black;
 }
 
 a {
